@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Usual";
+    src: url(font/openregular.woff2);
+}
+@font-face {
+    font-family: "rare";
+    src: url(font/openbold.woff2);
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Usual";
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    display: block;
+    height: 109.97px;
+    background-color: #D32323;
+}
+.headersec1{
+    width: 100%;
+    height: 43.97px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: space-between;
+}
+.headersec2{
+    width: 100%;
+    height: 66px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+.app{
+    background-color: #BC1D25;
+    border: 1px solid  #91151C;
+    width: 100.06px;
+    height: 32px;
+    justify-self: start;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-left: 9px;
+    display: flex;
+    gap: 2px;
+}
+.logo{
+    width: 51.95px;
+    height: 25.97px;
+    background: url(img/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-self: center;
+    margin-right: 4px;
+}
+.menu{
+    width: 30px;
+    height: 30px;
+    justify-self: end;
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    margin-right: 18px;
+    margin-bottom: -2px
+}
+.menu img{
+    width: 23px;
+    height: 24px;
+}
+.searchbar{
+    height: 48px;
+    min-width: 300px;
+    background-color: rgb(255, 255, 255);
+    margin-left:10px;
+    margin-right: 14px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+}
+.mobiledef p{
+    color: white;
+    font-size: 11.5px;
+    margin-top: 7px;
+    font-weight: 500;
+    margin-left: -1px;
+}
+.mobilelogo img{
+    margin-top: 7px;
+    margin-left: 6px;
+}
+.searchicon img{ 
+    margin-left: 18px;
+    margin-top: 15px;
+}
+.searchdescription p{
+    margin-top: 12px;
+    margin-left: 16px;
+    color: rgb(102, 100, 100);
+}
+section{
+    margin-top: 130px;
+    padding: 0px 0px;
+}
+.services{
+    min-width: 280px;
+    height: 192px;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    text-align: center;
+    align-items: center;
+    
+}
+.serviceitem{
+    padding: 0 3px;
+}
+.serviceitem img{
+    height: 36px;
+    width: auto;
+}
+.serviceitem p{
+    font-size: 12px;
+    text-align: center;
+    font-family: "Usual";
+    font-weight: 100;
+    margin-bottom: 0;
+    margin-top: 2;
+    
+}
+@media (min-width: 321px){
+    .logo{
+        margin-right: ;
+    }
+}
+@media (min-width: 480px){
+    .app{
+        height: 30px;
+    }
+    .mobilelogo{
+        margin-top: -1px;
+    }
+    .mobiledef{
+        margin-top: -2px;
+    }
+    
+}
+@media (min-width: 750px){
+    .searchicon{
+        display: none;
+    }
+}
+
