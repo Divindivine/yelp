@@ -8,11 +8,11 @@
     src: url(font/openbold.woff2);
 }
 @font-face {
-    font-family: "a";
+    font-family: "b";
     src: url(font/opensemibold.woff2);
 }
 @font-face {
-    font-family: "b";
+    font-family: "c";
     src: url(font/poppinsbold.woff2);
 }
 @font-face {
@@ -129,11 +129,11 @@ section{
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
     text-align: center;
-    padding-left: 5px;
+    padding-left: px;
 }
 .serviceitem{
     padding: 0px 0px;
-    width: 94.25%;
+    width: 100%;
 }
 .serviceitem img{
     margin-top: 13px;
@@ -144,14 +144,15 @@ section{
 .serviceitem p{
     font-size: 12px;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    letter-spacing: -0.15px;
+    letter-spacing: px;
     color: #333;
     margin-bottom: 0;
-    margin-top: 0px;
+    margin-top: -1px;
     width: inherit;
     word-wrap: break-word;
     line-height: 18px;
     text-align: center;
+
 }
 main{
     margin-top: 41px;
@@ -346,10 +347,119 @@ main{
 .viewmore p{
     margin-top: 8px;
 }
-.mainlast{
+.bestrestaurants{
+    margin-top: 83px;
     width: 100%;
+    text-align: center;
 }
-
+.bestrestaurants p{
+    font-size: 14px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+#restauranthead{
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    color: #333;
+    margin-bottom: 18px;
+    margin-top: 0px;
+}
+#restauranttail{
+    margin-bottom: 32px;
+}
+footer{
+    background: rgba(247, 247, 247, 1);
+    width: calc(100%-48px);
+    padding: 48px 24px;
+    padding-bottom: 35px;    
+}
+.langncity p{
+    margin-top: 0;
+    font-weight: 700;
+    color: rgba(45, 46, 47, 1);
+    font-family: "a";
+    margin-bottom: 7px;
+}
+.langncity a{
+    font-size: 14px;
+    color: rgba(110, 112, 114, 1);
+    margin-top: 0;
+}
+.langncity a img{
+    vertical-align: middle;
+    margin-left: 4px;
+}
+#secondlangcity{
+    margin-top: 17px;
+}
+.footerlist{
+    margin-top: 32px;
+    display: flex;
+    margin-left: 0;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}  
+.footerlist li{
+    color: rgba( 2, 122, 151, 1);
+    font-size: 14px;
+}
+#dot::after{
+    content: '• ';
+    size: 0.5px;
+    color: black;
+    padding: 0 7.5px;
+}
+#addbusiness{
+    font-size: 14px;
+    color: rgba( 2, 122, 151, 1);
+    margin-top: 26px;
+}
+#copyright{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(110, 112, 114, 1);
+    margin-top: 27px;
+    line-height: 13px;
+}
+#smallimg{
+    width: 15px;
+    height: 17px;
+}
+#smallimg, #bigimg{
+    vertical-align: middle;
+}
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.aboutgrid, .discovergrid, .yelpgrid{
+    display: flex;
+    flex-direction: column;
+}
+.grid a{
+    margin-top: 8px;
+    line-height: 20px;
+}
+.grid p{
+    line-height: 24px;
+}
+.aboutgrid{
+    margin-left: 0;
+    margin-right: 10px;
+}
+.discovergrid{
+    margin: 0 9px;
+}
+.yelpgrid{
+    margin:0 10px;
+}
+.langgrid{
+    margin-left: 20px;
+}
 @media (min-width: 321px){
     .logo{
         margin-right: 0px;
@@ -388,9 +498,62 @@ main{
     .servnprofgriditem p{
         font-size: 12px;
     }
+    #restauranthead{
+        font-size: 12px;
+
+    }
+    .bestrestaurants{
+       margin-top: 88px;
+    }
+}
+@media (max-width: 600px){
+    .grid{
+        display: none;
+    }
+    .langncityhide{
+        display: block;
+    }
+}
+@media (min-width: 601px){
+    .langncityhide{
+        display: none;
+    }
+    .footerlist{
+        display: none;
+    }
+    #copyright{
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    footer{
+        padding: 60px 32px;
+    }
+    #addbusiness{
+        margin-top: 60px;
+    }
 }
 @media (min-width: 750px){
     .searchicon{
         display: none;
+    }
+}
+@media (min-width: 1024px){
+    #addbusiness{
+        display: none;
+    }
+    #copyright{
+        margin-top: 58px;
+        margin-bottom: -2px;
+    }
+}
+@media (min-width: 1220px){
+    .grid{
+        width: 1154px;
+        margin: 0 auto;
+    }
+    #copyright{
+        width: 1156px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
