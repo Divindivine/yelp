@@ -696,21 +696,23 @@ footer{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(6,1fr);
-    gap: 24px;   
+    gap: 24px;
+    margin-top: 40px;
 }
 .itemgrid{
     border: 1px solid rgb(235, 235, 235);
     border-radius: 4px;
     display: flex;
     flex-flow: column;
-    min-height: 400px;
-    max-height: 500px;
+    height: 400px;
     box-sizing: border-box;
+}
+.review{
+    height: 428px;
 }
 .profileview{
     padding:16px;
     padding-bottom: 0px;
-    margin-bottom: 16px;
     box-sizing: border-box;
 }
 .profileviewin{
@@ -746,6 +748,226 @@ footer{
     color: rgb(110,112,114);
     text-decoration: none;
     margin: 0;
+}
+.spacewithbottom{
+    border-bottom: 1px solid rgb(235, 235, 235);
+    margin: 0 16px;
+    margin-top: 16px;
+}
+.afterprofile{
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    flex-grow: 1;
+    padding: 16px;
+}
+.detailsnrating{
+    margin-bottom: 12px;
+    overflow-wrap: break-word;
+}
+.indetailsnrating{
+    margin-left: 0px;
+    gap: 12px;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+.detailsnratingfirst{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    font-family:"c";
+    overflow-wrap: break-word; 
+}
+.detailsnratingsecond{
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    font-size: 14px;
+    color: gray;
+    height: 20px;
+    gap: 8px;
+}
+.detailsnratingsecond img{
+    height: 20px;
+    width: 108px;
+}
+.detailsnratingthird{
+    font-size: 12px;
+    color: rgb(90, 88, 88);
+    margin-top: 5px;
+}
+.img1{
+    width: 100%;
+    height: 160px;
+    background: url(img/mq.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img2{
+    width: 100%;
+    height: 160px;
+    background: url(img/eddie.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.like{
+    margin-top: 12px;
+    margin-left: 10px;
+}
+.reviewimg1{
+    margin-top: 20px;
+    height: 150px;
+    width: 100%;
+    background: url(img/eddie2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.afterreviewimg{
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    flex:1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.smallrating img{
+    height: 16px;
+    width: 88px
+}
+.reviewdetails{
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+}
+span{
+    color: rgba(2, 122, 151, 1);
+    font-weight: 600;
+    font-size: 14px;
+}
+.tools{
+    margin: 0 16px;
+    margin-top: 1;
+    height: 59px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(235, 235, 235);
+    display: flex;
+    justify-content: space-between;
+}
+.reviewimg2{
+    margin-top: 20px;
+    height: 150px;
+    width: 100%;
+    background: url(img/taqueria.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.reviewimg3{
+    margin-top: 20px;
+    height: 150px;
+    width: 100%;
+    background: url(img/leaning.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img3{
+    width: 100%;
+    height: 160px;
+    background: url(img/eyebrow.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.reviewimg4{
+    margin-top: 20px;
+    height: 150px;
+    width: 100%;
+    background: url(img/beautyparlour.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.reviewimg5{
+    margin-top: 20px;
+    height: 150px;
+    width: 100%;
+    background: url(img/golden.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.reviewimg6{
+    margin-top: 20px;
+    height: 150px;
+    width: 100%;
+    background: url(img/sociale.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.reviewimg7{
+    margin-top: 20px;
+    height: 150px;
+    width: 100%;
+    background: url(img/izzy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.reviewimg8{
+    margin-top: 20px;
+    height: 150px;
+    width: 100%;
+    background: url(img/burger.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.reviewimg9{
+    margin-top: 20px;
+    height: 150px;
+    width: 100%;
+    background: url(img/burmese.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#showmore{
+    display: flex;
+    color: rgba( 2, 122, 151, 1);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    justify-content: center;
+}
+#showmore img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+nav{
+    margin-top: 60px;
+    border-top: 1px solid rgba(235, 227, 227, 0.829);
+}
+#categoryheading{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    line-height: 36px;
+    font-family: "c";
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.categorygrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 @media (min-width: 321px){
     .logo{
@@ -831,8 +1053,17 @@ footer{
     .deskrating{
         display: none;
     }
+    nav{
+        display: none;
+    }
 }
 @media (min-width: 1024px){
+    nav{
+        display: block;
+    }
+    main{
+        display: none;
+    }
     .mainlogo{
         display: none;
     }
@@ -865,6 +1096,21 @@ footer{
     section{
         padding: 0 32px;
     }
+    .from1025{
+        display: none;
+    }
+}
+@media(min-width: 1025px){
+    .ratinggrid{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+    .before1025{
+        display: none;
+    }
+    .from1025{
+        display: block;
+    }
 }
 @media (min-width: 1043px){
     .mainlogo{
@@ -888,10 +1134,30 @@ footer{
         margin-right: auto;
     }
 }
+@media(max-width: 1223px){
+    .final{
+        display: none;
+    }
+    
+}
 @media (min-width: 1224px){
     .headhome{
         justify-content: center;
         margin-right: 650px;
+    }
+    .from1025{
+        display: none;
+    }
+    .final{
+        display: block;
+    }
+    .itemgrid{
+        width: 370px;
+    }
+    .ratinggrid{
+        width: 1144px;
+        margin: 0 auto;
+        margin-top: 40px;
     }
 }
 @media (min-width:1392px){
